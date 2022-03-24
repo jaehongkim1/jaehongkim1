@@ -33,7 +33,7 @@ module Bsync(
 reg[33:0]	cnt;
 reg			mode;	
 reg[33:0]	mo_cnt;
-
+//always?
 always @(posedge IO_SYS_CLK)
 begin
 	cnt <= cnt+1;
