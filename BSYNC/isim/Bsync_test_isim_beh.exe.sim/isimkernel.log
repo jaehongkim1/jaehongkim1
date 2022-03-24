@@ -1,0 +1,29 @@
+Command line:
+   Bsync_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  60197
+
+Tue Mar 08 17:29:02 2022
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 5153.03 Meg
+
+ Total Signals          : 19
+ Total Nets             : 19
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 15
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 174
+Total Line Count : 175
+
+ Total Simulation Time: 61.8594 sec
+
+ Current Memory Usage: 4995.74 Meg
+
+Tue Mar 08 17:30:15 2022
+

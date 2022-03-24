@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/ISE FILE/BSYNC/Bsync_test_isim_beh.exe" -prj "D:/ISE FILE/BSYNC/Bsync_test_beh.prj" "work.Bsync_test" "work.glbl" 

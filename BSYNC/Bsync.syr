@@ -1,0 +1,449 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: Bsync.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Bsync.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Bsync"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : Bsync
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\ISE FILE\BSYNC\Bsync.v" into library work
+Parsing module <Bsync>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Bsync>.
+WARNING:HDLCompiler:413 - "D:\ISE FILE\BSYNC\Bsync.v" Line 58: Result of 2-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 111: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 128: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 145: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 162: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 179: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 196: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 213: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 230: case condition never applies
+WARNING:HDLCompiler:295 - "D:\ISE FILE\BSYNC\Bsync.v" Line 247: case condition never applies
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Bsync>.
+    Related source file is "D:\ISE FILE\BSYNC\Bsync.v".
+    Found 1-bit register for signal <LED1>.
+    Found 1-bit register for signal <LED2>.
+    Found 1-bit register for signal <IO_BSYNC_OUT>.
+    Found 1-bit register for signal <mode>.
+    Found 34-bit register for signal <mo_cnt>.
+    Found 34-bit register for signal <cnt>.
+    Found 34-bit adder for signal <cnt[33]_GND_1_o_add_1_OUT> created at line 39.
+    Found 34-bit adder for signal <mo_cnt[33]_GND_1_o_add_4_OUT> created at line 55.
+    Found 1-bit adder for signal <mode_PWR_1_o_add_6_OUT<0>> created at line 58.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  72 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+Unit <Bsync> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 1-bit adder                                           : 1
+ 34-bit adder                                          : 2
+# Registers                                            : 6
+ 1-bit register                                        : 4
+ 34-bit register                                       : 2
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Bsync>.
+The following registers are absorbed into counter <mode>: 1 register on signal <mode>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+The following registers are absorbed into counter <mo_cnt>: 1 register on signal <mo_cnt>.
+Unit <Bsync> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 3
+ 1-bit up counter                                      : 1
+ 34-bit up counter                                     : 2
+# Registers                                            : 3
+ Flip-Flops                                            : 3
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Bsync> ...
+WARNING:Xst:1710 - FF/Latch <IO_BSYNC_OUT> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <LED1> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <cnt_0> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_1> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_2> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_5> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_3> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_4> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_6> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_7> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_10> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_8> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_9> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_11> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_12> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_15> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_13> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_14> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_18> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_16> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_17> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_21> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_19> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_20> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_22> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_23> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_26> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_24> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_25> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_27> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_28> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_31> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_29> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_30> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_32> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <cnt_33> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:2677 - Node <mode> of sequential type is unconnected in block <Bsync>.
+WARNING:Xst:1710 - FF/Latch <mo_cnt_24> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_25> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_26> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_27> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_28> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_29> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_30> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_31> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_32> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <mo_cnt_33> (without init value) has a constant value of 0 in block <Bsync>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Bsync, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Bsync.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 105
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 23
+#      LUT2                        : 1
+#      LUT5                        : 24
+#      LUT6                        : 7
+#      MUXCY                       : 23
+#      VCC                         : 1
+#      XORCY                       : 24
+# FlipFlops/Latches                : 25
+#      FD                          : 25
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 5
+#      IBUF                        : 2
+#      OBUF                        : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              25  out of  11440     0%  
+ Number of Slice LUTs:                   56  out of   5720     0%  
+    Number used as Logic:                56  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     56
+   Number with an unused Flip Flop:      31  out of     56    55%  
+   Number with an unused LUT:             0  out of     56     0%  
+   Number of fully used LUT-FF pairs:    25  out of     56    44%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                           6
+ Number of bonded IOBs:                   6  out of    102     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+IO_SYS_CLK                         | BUFGP                  | 25    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.412ns (Maximum Frequency: 184.775MHz)
+   Minimum input arrival time before clock: 5.589ns
+   Maximum output required time after clock: 4.162ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'IO_SYS_CLK'
+  Clock period: 5.412ns (frequency: 184.775MHz)
+  Total number of paths / destination ports: 925 / 25
+-------------------------------------------------------------------------
+Delay:               5.412ns (Levels of Logic = 3)
+  Source:            mo_cnt_16 (FF)
+  Destination:       mo_cnt_1 (FF)
+  Source Clock:      IO_SYS_CLK rising
+  Destination Clock: IO_SYS_CLK rising
+
+  Data Path: mo_cnt_16 to mo_cnt_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.221  mo_cnt_16 (mo_cnt_16)
+     LUT6:I0->O            3   0.254   1.042  mo_cnt[33]_GND_1_o_equal_6_o<33>4 (mo_cnt[33]_GND_1_o_equal_6_o<33>3)
+     LUT6:I2->O           23   0.254   1.788  _n00751 (_n0075)
+     LUT5:I0->O            1   0.254   0.000  mo_cnt_1_rstpot (mo_cnt_1_rstpot)
+     FD:D                      0.074          mo_cnt_1
+    ----------------------------------------
+    Total                      5.412ns (1.361ns logic, 4.051ns route)
+                                       (25.1% logic, 74.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'IO_SYS_CLK'
+  Total number of paths / destination ports: 98 / 25
+-------------------------------------------------------------------------
+Offset:              5.589ns (Levels of Logic = 3)
+  Source:            IO_MODE_KEY (PAD)
+  Destination:       mo_cnt_1 (FF)
+  Destination Clock: IO_SYS_CLK rising
+
+  Data Path: IO_MODE_KEY to mo_cnt_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            27   1.328   1.891  IO_MODE_KEY_IBUF (IO_MODE_KEY_IBUF)
+     LUT6:I0->O           23   0.254   1.788  _n00751 (_n0075)
+     LUT5:I0->O            1   0.254   0.000  mo_cnt_1_rstpot (mo_cnt_1_rstpot)
+     FD:D                      0.074          mo_cnt_1
+    ----------------------------------------
+    Total                      5.589ns (1.910ns logic, 3.679ns route)
+                                       (34.2% logic, 65.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'IO_SYS_CLK'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            LED2 (FF)
+  Destination:       LED2 (PAD)
+  Source Clock:      IO_SYS_CLK rising
+
+  Data Path: LED2 to LED2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   0.725  LED2 (LED2_OBUF)
+     OBUF:I->O                 2.912          LED2_OBUF (LED2)
+    ----------------------------------------
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock IO_SYS_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+IO_SYS_CLK     |    5.412|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.00 secs
+ 
+--> 
+
+Total memory usage is 4485856 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   57 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

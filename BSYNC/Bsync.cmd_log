@@ -1,0 +1,58 @@
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
+xst -intstyle ise -ifn "D:/ISE FILE/BSYNC/Bsync.xst" -ofn "D:/ISE FILE/BSYNC/Bsync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Bsync.ucf -p xc6slx9-tqg144-2 "Bsync.ngc" Bsync.ngd  
+map -intstyle ise -p xc6slx9-tqg144-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Bsync_map.ncd Bsync.ngd Bsync.pcf 
+par -w -intstyle ise -ol high -mt off Bsync_map.ncd Bsync.ncd Bsync.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml Bsync.twx Bsync.ncd -o Bsync.twr Bsync.pcf -ucf Bsync.ucf 
+bitgen -intstyle ise -f Bsync.ut Bsync.ncd 
